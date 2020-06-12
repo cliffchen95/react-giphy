@@ -18,7 +18,7 @@ class App extends React.Component {
 
   async searchGif(search) {
     try {
-        const res = await fetch(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=d28Yx518Ng4HXcpbTN5tyNZt0HYQ2sGn&limit=5`)
+        const res = await fetch(`https://api.giphy.com/v1/gifs/search?q=${search}&api_key=d28Yx518Ng4HXcpbTN5tyNZt0HYQ2sGn&limit=5`)
         const json = await res.json();
         this.setState({ results: json.data })
     } catch (err) {
