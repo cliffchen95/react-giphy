@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+img {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.img-container {
+    max-width: 23%;
+    margin: 4px;
+    display: inline-block;
+}
